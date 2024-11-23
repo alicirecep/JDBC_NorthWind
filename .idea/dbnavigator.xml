@@ -25,7 +25,18 @@ SELECT * FROM orders WHERE id = 30;
 
 INSERT INTO orders (id, employee_id, customer_id,ship_name) VALUES (83,3,1,'bilge Adam');
 
-SELECT ship_name FROM orders WHERE id= 83;]]></console>
+SELECT * FROM orders WHERE id= 83;
+
+UPDATE orders SET ship_name = 'Adam' WHERE id=85;
+
+SELECT ship_name FROM orders WHERE id=88;
+
+
+select * from orders;
+
+DELETE FROM orders WHERE id = 83;
+
+SELECT * FROM orders WHERE id = ?;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
