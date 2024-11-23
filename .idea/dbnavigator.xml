@@ -21,7 +21,11 @@
 
 -- Kullanıcı, belirli bir order_id ile ilişkili sipariş bilgilerini görebilmek istiyor.
 
-SELECT * FROM orders WHERE id = 30;]]></console>
+SELECT * FROM orders WHERE id = 30;
+
+INSERT INTO orders (id, employee_id, customer_id,ship_name) VALUES (83,3,1,'bilge Adam');
+
+SELECT ship_name FROM orders WHERE id= 83;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -75,7 +79,7 @@ SELECT * FROM orders WHERE id = 30;]]></console>
           <deprecated-pwd value="cGFzc3dvcmQxMjM=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
